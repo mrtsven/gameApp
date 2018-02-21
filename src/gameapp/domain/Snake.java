@@ -11,7 +11,7 @@ public class Snake {
     private Grid grid;
     private int joints;
     private Point head;
-    private boolean safe;
+    private boolean safe = true;
     private List<Point> points;
     private int x;
     private int y;

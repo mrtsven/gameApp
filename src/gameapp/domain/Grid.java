@@ -37,21 +37,24 @@ public class Grid {
         return new Point(x,y);
     }
 
+
+
     private int getRandomX(){
         Random randomX = new Random();
-        int x;
-        do{
-            x = randomX.nextInt(rows);
-        }while (food.equals(snake.getHead()));
-        return x;
+        int xa;
+
+            xa = randomX.nextInt(rows);
+
+
+        return xa;
     }
     private int getRandomY(){
         Random randomY = new Random();
-        int y;
-        do{
-            y = randomY.nextInt(cols);
-        }while (food.equals(snake.getHead()));
-        return y;
+        int ya;
+
+            ya = randomY.nextInt(cols);
+
+        return ya;
     }
 
     void paint(GraphicsContext gc)
@@ -82,14 +85,6 @@ public class Grid {
 
     public Point getFood(){
         return food;
-    }
-
-    public int getCols(){
-        return cols;
-    }
-
-    public int getRows(){
-        return rows;
     }
 
     public double getWidth(){
