@@ -10,8 +10,6 @@ import gameapp.domain.Grid;
 import gameapp.domain.Painter;
 import gameapp.domain.Snake;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
@@ -49,16 +47,16 @@ public class GameApp extends Application {
             }
             switch (e.getCode()) {
                 case UP:
-                    snake.setUp();
+                    snake.goUp();
                     break;
                 case DOWN:
-                    snake.setDown();
+                    snake.goDown();
                     break;
                 case LEFT:
-                    snake.setLeft();
+                    snake.goLeft();
                     break;
                 case RIGHT:
-                    snake.setRight();
+                    snake.goRight();
                     break;
                 case ENTER:
                     if (loop.isPaused()) {

@@ -72,25 +72,25 @@ public class Snake {
         }
     }
 
-    public void setUp(){
+    public void goUp(){
         if(y == 1 && joints > 1) return;
         x = 0;
         y = -1;
     }
 
-    public void setDown(){
+    public void goDown(){
         if(y == -1 && joints > 1)return;
         x = 0;
         y = 1;
     }
 
-    public void setLeft() {
+    public void goLeft() {
         if (x == 1 && joints > 1) return;
         x = -1;
         y = 0;
     }
 
-    public void setRight() {
+    public void goRight() {
         if (x == -1 && joints > 1) return;
         x = 1;
         y = 0;
